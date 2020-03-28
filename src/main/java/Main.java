@@ -48,9 +48,6 @@ public class Main {
             list.stream()
                     .forEach(number -> list.add(number));
             return list;
-
-//        while (number == null) {
-//            list.add(number);
-//        }
+            
         }
 }
