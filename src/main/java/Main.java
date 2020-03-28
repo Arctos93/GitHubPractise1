@@ -20,6 +20,7 @@ public class Main {
         }
         
 
+
         public static List<Integer> getListaLiczbCalkowitych () throws IOException {
             ArrayList<Integer> list = new ArrayList<>();
 
