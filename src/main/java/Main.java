@@ -18,6 +18,7 @@ public class Main {
 
             return array.stream().min(Integer::compareTo).get();
         }
+        
 
         public static List<Integer> getListaLiczbCalkowitych () throws IOException {
             ArrayList<Integer> list = new ArrayList<>();
