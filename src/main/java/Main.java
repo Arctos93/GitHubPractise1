@@ -29,25 +29,33 @@ public class Main {
         List<Integer> listaLiczbCalkowitych = getListaLiczbCalkowitych();
         System.out.println(getMinimum(listaLiczbCalkowitych));
 
-        getListaLiczbCalkowitych();
         getMinimum(listaLiczbCalkowitych);
 
     }
 
-
         public static int getMinimum (List < Integer > array) {
-            array.stream().min(Integer::compareTo).get();
-            return 0;
+
+            return array.stream().min(Integer::compareTo).get();
         }
 
         public static List<Integer> getListaLiczbCalkowitych () throws IOException {
             ArrayList<Integer> list = new ArrayList<>();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj liczbę całkowitą: ");
-            list.stream()
-                    .forEach(number -> list.add(number));
-            return list;
-            
+            Scanner size = new Scanner(System.in);
+            System.out.println("Podaj ilość liczb całkowitych: ");
+            Integer s = size.nextInt();
+
+            for(int i = 0; i < s; i++){
+                list.add(size.nextInt());
+            } return list;
+
+
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Podaj liczbę całkowitą: ");
+//            list.stream()
+//                    .forEach(number -> list.add(number));
+//            return list;
+
         }
 }
