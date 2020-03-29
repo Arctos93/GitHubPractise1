@@ -5,8 +5,10 @@ Zasady gry:
 
 Gracz kontroluje ruch węża, który ślizga się po kwadratowym polu: w górę, w dół, w prawo i w lewo.
 Wąż nie może przestać się ruszać.
-Celem gry jest zjedzenie jak największej liczby jabłek. Jabłka pojawiają się kolejno w losowym miejscu na boisku, gdy tylko wąż połknie poprzednie jabłko.
-Z każdym nowym jabłkiem wąż rośnie w jednym segmencie (zajmuje jeszcze jedną komórkę). 3. Kiedy rozpoczyna się nasza gra, wąż ma trzy komórki długości (ma trzy segmenty) i może urosnąć do 28 komórek.
+Celem gry jest zjedzenie jak największej liczby jabłek. Jabłka pojawiają się kolejno w losowym miejscu na boisku,
+ gdy tylko wąż połknie poprzednie jabłko.
+Z każdym nowym jabłkiem wąż rośnie w jednym segmencie (zajmuje jeszcze jedną komórkę). 3. Kiedy rozpoczyna się nasza
+gra, wąż ma trzy komórki długości (ma trzy segmenty) i może urosnąć do 28 komórek.
 W miarę wzrostu węża rośnie szybkość gry.
 Wąż nie może przejść przez siebie ani opuścić pola gry.
 Gra kończy się zwycięstwem, jeśli wąż wzrośnie do 28 segmentów.
@@ -24,7 +26,8 @@ Jeśli zrobiłeś wszystko dobrze, możesz już uruchomić SnakeGame, a zobaczys
 
 Utwórz zmienne, aby zapisać szerokość i wysokość pola gry.
 
-Zastąp metodę public void initialize () klasy nadrzędnej: będzie ona zawierać polecenia, które zostaną wykonane raz po uruchomieniu gry. Na przykład, ustawianie wielkości pola gry.
+Zastąp metodę public void initialize () klasy nadrzędnej: będzie ona zawierać polecenia, które zostaną wykonane raz
+ po uruchomieniu gry. Na przykład, ustawianie wielkości pola gry.
 
 
 Wymagania:
