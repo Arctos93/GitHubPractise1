@@ -1,0 +1,40 @@
+Snake (Part 1/20)
+Napiszmy grę Snake.
+
+Zasady gry:
+
+Gracz kontroluje ruch węża, który ślizga się po kwadratowym polu: w górę, w dół, w prawo i w lewo.
+Wąż nie może przestać się ruszać.
+Celem gry jest zjedzenie jak największej liczby jabłek. Jabłka pojawiają się kolejno w losowym miejscu na boisku,
+ gdy tylko wąż połknie poprzednie jabłko.
+Z każdym nowym jabłkiem wąż rośnie w jednym segmencie (zajmuje jeszcze jedną komórkę). 3. Kiedy rozpoczyna się nasza
+gra, wąż ma trzy komórki długości (ma trzy segmenty) i może urosnąć do 28 komórek.
+W miarę wzrostu węża rośnie szybkość gry.
+Wąż nie może przejść przez siebie ani opuścić pola gry.
+Gra kończy się zwycięstwem, jeśli wąż wzrośnie do 28 segmentów.
+Gra kończy się przegraną, jeśli wąż wpadnie na siebie lub na skraj pola gry.
+Teraz zacznijmy wdrażać grę:
+
+Potrzebujemy klasy, która będzie zawierać logikę gry. Nazwijmy to SnakeGame.
+
+Nie zapomnij, aby odziedziczył klasę gry.
+
+Ta i inne klasy „silnika” znajdują się w pakiecie com.codegym.engine.cell.
+Aby ich użyć, klasa SnakeGame musi zawierać następującą instrukcję importu: import com.codegym.engine.cell. *;
+
+Jeśli zrobiłeś wszystko dobrze, możesz już uruchomić SnakeGame, a zobaczysz puste pole gry.
+
+Utwórz zmienne, aby zapisać szerokość i wysokość pola gry.
+
+Zastąp metodę public void initialize () klasy nadrzędnej: będzie ona zawierać polecenia, które zostaną wykonane raz
+ po uruchomieniu gry. Na przykład, ustawianie wielkości pola gry.
+
+
+Wymagania:
+1. Musi istnieć publiczna klasa SnakeGame.
+2. Klasa SnakeGame musi odziedziczyć klasę Game.
+3. Klasa SnakeGame musi mieć publiczne statyczne końcowe pole int WIDTH, które jest inicjowane na 15, kiedy jest deklarowane.
+4. Klasa SnakeGame musi mieć publiczne statyczne końcowe pole int HEIGHT, które jest inicjalizowane na 15, gdy jest zadeklarowane.
+5. W klasie SnakeGame metoda initialize () nadrzędnej klasy Game musi zostać zastąpiona.
+6. Metodę setScreenSize (int, int) klasy Game należy wywołać za pomocą argumentów (WIDTH, HEIGHT) w metodzie initialize ().
+7. Klasa SnakeGame musi mieć instrukcję, która importuje całą zawartość pakietu com.codegym.engine.cell.
