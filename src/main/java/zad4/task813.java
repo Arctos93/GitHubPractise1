@@ -1,5 +1,6 @@
 package zad4;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /*
@@ -8,11 +9,14 @@ import java.util.Set;
 
 public class task813 {
     public static Set<String> utworzSet() {
-        //tutaj wpisz swój kod
-
+        Set<String> stringSet = new HashSet<>();
+        for (int i = 0; i < 20; i++) {
+            stringSet.add("Lalala" + i);
+        }
+        return stringSet;
     }
 
     public static void main(String[] args) {
-
+        utworzSet();
     }
 }
