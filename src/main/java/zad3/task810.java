@@ -1,6 +1,7 @@
 package zad3;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -18,12 +19,15 @@ public class task810 {
     }
 
     public static long getCzasGetWms(List lista) {
-        // tutaj wpisz swój kod
+        Date startDate = new Date();
 
         get10000(lista);
 
-        // tutaj wpisz swój kod
+        Date finishDate = new Date();
 
+        long finishingtime = finishDate.getTime() - startDate.getTime();
+
+        return finishingtime;
     }
 
     public static void get10000(List lista) {
