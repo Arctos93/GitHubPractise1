@@ -18,16 +18,17 @@ public class task812 {
     public static void findingLongest(List list) {
         int countMAX = 0;
         int count = 1;
-            for (int i = 1; i < 10; i++) {
-                if (list.get(i).equals(list.get(i -1))) {
-                    count++;
-                } else {
-                    if (count > countMAX) {
-                        countMAX = count;
-                    }
-                    count = 1;
-                }
+        for (int i = 1; i < list.size(); i++) {
+            if (list.get(i).equals(list.get(i - 1))) {
+                count++;
+            } else {
+                count = 1;
             }
+            if (count > countMAX) {
+                countMAX = count;
+            }
+
+        }
         System.out.println(countMAX);
 
         System.out.println(list);
@@ -40,7 +41,7 @@ public class task812 {
          */
 //        addingToList(integerArrayList);
         /**
-        Lista która nie działa
+         Lista która nie działa
          */
         integerArrayList.add(0);
         integerArrayList.add(23);
@@ -56,15 +57,15 @@ public class task812 {
          Lista która  działa
          */
 //        integerArrayList.add(0);
-//        integerArrayList.add(0);
-//        integerArrayList.add(0);
+//        integerArrayList.add(2);
 //        integerArrayList.add(0);
 //        integerArrayList.add(3);
-//        integerArrayList.add(0);
+//        integerArrayList.add(3);
+//        integerArrayList.add(3);
+//        integerArrayList.add(3);
+//        integerArrayList.add(3);
+//        integerArrayList.add(3);
 //        integerArrayList.add(2);
-//        integerArrayList.add(1);
-//        integerArrayList.add(1);
-//        integerArrayList.add(1);
         findingLongest(integerArrayList);
 
     }
